@@ -1,0 +1,39 @@
+{
+  "name": "postcss-unroot",
+  "version": "1.0.0",
+  "description": "Replace :root as html in CSS selectors",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "nots",
+    "selectors"
+  ],
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathantneal/postcss-unroot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonathantneal/postcss-unroot/issues"
+  },
+  "homepage": "https://github.com/jonathantneal/postcss-unroot",
+  "dependencies": {
+    "postcss": "^5.0.4",
+    "postcss-selector-parser": "^1.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-mocha": "^2.1.3"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "engines": {
+    "iojs": ">=2.0.0",
+    "node": ">=0.12.0"
+  }
+}
