@@ -2,7 +2,7 @@
 
 <img align="right" width="135" height="95" src="http://postcss.github.io/postcss/logo-leftp.png" title="Philosopher’s stone, logo of PostCSS">
 
-[UnRoot] is a [PostCSS] plugin that replaces selectors containing `:root` with `html`. This can be useful for outputting CSS for old browsers like Internet Explorer 8.
+[UnRoot] replaces selectors containing `:root` with `html`. This can be useful for outputting CSS for older browsers like Internet Explorer 8.
 
 ```css
 /* before */
