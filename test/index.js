@@ -31,6 +31,7 @@ var dir   = './test/fixtures/';
 var fs      = require('fs');
 var path    = require('path');
 var plugin  = require('../');
+var postcss = require('postcss');
 var test    = require('tape');
 
 Object.keys(tests).forEach(function (name) {
@@ -69,7 +70,7 @@ Object.keys(tests).forEach(function (name) {
 				fs.writeFileSync(expectPath, expectCSS);
 			}
 
-			plugin.process(inputCSS, options).then(function (result) {
+			postcss([plugin(options)]).process(inputCSS, { from: undefined }).then(function (result) {
 				var actualCSS = result.css;
 
 				if (debug) fs.writeFileSync(actualPath, actualCSS);
